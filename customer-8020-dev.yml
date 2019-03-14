@@ -1,0 +1,18 @@
+server:
+  port: 8020
+feign:
+  hystrix:
+    enabled: true
+info:
+  app:
+    name: customer-8020
+  company: www.jleopard.org
+management:
+  server:
+    servlet:
+      context-path: /
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
